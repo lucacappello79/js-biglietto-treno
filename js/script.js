@@ -8,6 +8,7 @@
 // ALLORA applicare uno sconto del 20% al prezzo totale
 //? SE l'età dell'utente è superiore ai 65 anni 
 // ALLORA applicare uno sconto del 40% al prezzo totale
+// ALTRIMENTI applicare il prezzo intero
 //comunicare all'utente la somma totale da pagare
 
 let distanceKm = parseInt(prompt("Inserisci la distanza dalla tua destinazione in KM"));
