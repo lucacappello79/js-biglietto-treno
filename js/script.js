@@ -13,7 +13,7 @@
 
 let distanceKm = parseInt(prompt("Inserisci la distanza dalla tua destinazione in KM"));
 let userAge = parseInt(prompt("Inserisci la tua età"));
-let totalPrice = (distanceKm * (0.21));
+let totalPrice = (distanceKm * (0.21)); //carissimo
 let minorDiscount = (totalPrice / 100 * 20)
 let seniorDiscount = (totalPrice / 100 * 40)
 
@@ -30,13 +30,15 @@ if (userAge < 18) {
 
 } else if (userAge > 65) {
 
-    console.log(totalPrice - seniorDiscount) ;
+    // console.log((totalPrice - seniorDiscount).toFixed(2)); con tofixed ma non voglio usarlo in console log
+    console.log(totalPrice - seniorDiscount);
 
-    document.writeln(`L'importo da pagare è di ${(totalPrice - seniorDiscount).toFixed(2)} €`)
-
+    document.writeln(`L' importo da pagare è di ${(totalPrice - seniorDiscount).toFixed(2)} €`)
 
 } else {
 
     console.log(totalPrice.toFixed(2))
+
+    document.writeln(`L' importo da pagare è di ${totalPrice.toFixed(2)} €`)
 
 }
